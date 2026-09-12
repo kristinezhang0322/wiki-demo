@@ -66,5 +66,5 @@ User can ask questions related to the exhibition content, and the system retriev
   security/content/form check
 
 ## Run
-python main.py: 本地demo
+python main.py: local demo
 agent.md + scripts/*.py: Claude Code/CodeX
