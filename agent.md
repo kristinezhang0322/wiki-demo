@@ -1,16 +1,18 @@
 #  Virtual Environment
-使用.venv作为虚拟环境，每次进入项目之前先验证.venv是否已经被activate
+Use '.venv' as the project's virtual environment. Before running the project, make sure the virtual environment is activated.
 #  Agent Overview
-你是一个未来中心智能体展厅的Wiki Agent
-你有一个wiki skill.md,负责管理wiki库与问答和调用具体的wiki skill
-你有一个other skill.md,负责管理其他外界skills，对网页进行搜索和建立个性化agent等
+This agent is a wiki-based Q&A system designed for an interactive exhibition demo
+The agent uses 'wiki skill.md' to manage the wiki knowledge base, answer user questions and invoke the appropriate wiki workflow
+It also uses 'other skill.md' to manage external capabilities, such as web search and customized agent creation
 
 # Trigger：
-- 用户上传文档
-- 用户询问wiki库内容相关的问题
-- 用户要求更新wiki库
-- 用户要求对生成的答案重新进行检索
-- wiki库中的信息不足，需要去网页查找额外资料
-- 对用户的问答记录进行保存
+- Uploading documents to the wiki knowledge base
+- Asking questions related to wiki content
+- Updating the wiki knowledge base
+- Validating generated answers
+- Searching the web for additional information when the wiki does not contain sufficient information
+- Saving records of user questions
 
-具体规则查看skills/wiki_skills/wiki skill.md和skills/other_skills/other skill.md
+For detailed workflow rules, see:
+- 'skills/wiki_skills/wiki skill.md'
+- 'skills/other_skills/other skill.md'
