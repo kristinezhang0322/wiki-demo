@@ -3,41 +3,41 @@ source .venv/bin/activate
 pip install -r requirements.txt
 python main.py
 ## Introduction
-你是一个用workflow来实现的未来中心智能体展厅的Wiki智能问答系统，用户会在这里向你
-提任何与展览内容相关的问题，你需要根据要求生成Wiki系统并给出解答
+A workflow-based intelligent wiki Q&A system designed for an interactive exhibition demo
+User can ask questions related to the exhibition content, and the system retrieves relevant information from the wiki knowledge base to generate response.
 
 ## Project Structure
   ## Main Files
-  - agent.md 项目运行指导
-  - main.py 主代码
-  - tools.py 需要用到的python工具的代码
+  - 'agent.md' Instructions and workflow configuration for the agent
+  - 'main.py' Main application entry point
+  - 'tools.py' Python utility functions used by the workflows
   ## Virtual Environment
-  - .venv 虚拟环境安装包
-  - requirements.txt 需要的安装包
+  - '.venv' Local python virtual environment
+  - 'requirements.txt' Project dependencies
   ## Prompts
-  - ingest_prompt.txt ingest workflow的规则
-  - query_prompt.txt query workflow的规则
-  - lint_prompt.txt lint workflow的规则
+  - 'ingest_prompt.txt' Instructions for the ingest workflow
+  - 'query_prompt.txt' Instructions for the query workflow
+  - 'lint_prompt.txt' Instructions for the lint workflow
   ## Skills
     - wiki_skills
-      - wiki skill.md 三个workflow的调用总规则
-      - ingest_skill.md ingest里要用到的具体skills
-      - query_skill.md query里要用到的具体skills
-      - lint_skill.md lint里要用到的具体skills
+      - 'wiki skill.md' General rules shared across the 3 workflows
+      - 'ingest_skill.md' Skills used by the ingest workflow
+      - 'query_skill.md' Skills used by the query workflow
+      - 'lint_skill.md' Skills used by the lint workflow
     - other_skills
-      - other skill.md 外界skill的调用总规则
-      - agent-browser-clawdbot-SKILL 网页搜索skill
-      - agent-builder-SKILL 个性化agent建立skill
+      - 'other skill.md' General rules for external skills
+      - 'agent-browser-clawdbot-SKILL' Web search skill
+      - 'agent-builder-SKILL' Skill for building customized agents
   ## Scripts
-  - ingest.py ingest的具体代码
-  - query.py query的具体代码
-  - lint.py lint的具体代码
+  - 'ingest.py' Implementation of the ingest workflow
+  - 'query.py' Implementation of the query workflow
+  - 'lint.py' Implementation of the lint workflow
   ## References
-  - wiki document.pdf 参考的讲解词资料
+  - 'wiki document.pdf' Reference material used for the exhibition demo
   ## Database
-  - wiki.db wiki数据库
+  - 'wiki.db' SQLite database storing processed Wiki content
   ## .vscode
-  - settings.json 隐藏运行代码时产生的_pycache_
+  - 'settings.json' VS code workspace settings
 
 
 ## Design Principles
